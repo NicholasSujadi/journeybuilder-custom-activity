@@ -70,7 +70,9 @@ exports.publish = (req, res) => {
  * @param res
  */
 exports.validate = (req, res) => {
+  logger.debug('Journey Validated Successfully');
   res.status(200).send({
     status: 'ok',
   });
+  
 };

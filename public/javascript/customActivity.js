@@ -76,8 +76,11 @@ function initialize(data) {
 
     validateForm(function($form) {
         buttonSettings.enabled = $form.valid();
+        console.log('Validate Form Function: customActivity.js: ', buttonSettings);
         connection.trigger('updateButton', buttonSettings);
     });
+    
+    console.log('initialise function: customActivity.js: ', payload);
 }
 
 /**

@@ -131,6 +131,8 @@ function save() {
             })
         });
 
+        console.log('save function: customActivity.js: ', payload)
         connection.trigger('updateActivity', payload);
+        
     }
 }
